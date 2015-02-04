@@ -1,0 +1,15 @@
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.build.appxrecipe
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\priconfig.xml
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\priconfig.xml.intermediate
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\layout.resfiles
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\layout.resfiles.intermediate
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\resources.resfiles
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\resources.resfiles.intermediate
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\pri.resfiles
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\pri.resfiles.intermediate
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\qualifiers.txt
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\qualifiers.txt.intermediate
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bld\Debug\ProjectArchitectures.txt
