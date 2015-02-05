@@ -11,6 +11,34 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
+                $(document).ready(function () {
+                    var i, j;
+                    var appString="";
+                    for (i = 0; i < 15; i++) {
+                        for (j = 0; j < 15; j++) {
+                            appString = "<div class='gridcell";
+                            if (i == 0) appString += " topcell";
+                            if (i == 15) appString += " bottomcell";
+                            if (j == 0) appString += " leftcell";
+                            if (j == 15) appString += " rightcell";
+                            appString += "'></div>";
+                            $("#gridcontainer").append(appString);
+                        }
+                    }
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
             } else {
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
