@@ -11,16 +11,23 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
+
+                //Global Variables
+                var count = 0, player;
+
+                //create the 15x15 grid and add ids and classes
                 $(document).ready(function () {
-                    var i, j;
+                    var i, j,id="";
                     var appString="";
                     for (i = 0; i < 15; i++) {
                         for (j = 0; j < 15; j++) {
+                            id = (i * 15) + j;
                             appString = "<div class='gridcell";
                             if (i == 0) appString += " topcell";
-                            if (i == 15) appString += " bottomcell";
+                            if (i == 14) appString += " bottomcell";
                             if (j == 0) appString += " leftcell";
-                            if (j == 15) appString += " rightcell";
+                            if (j == 14) appString += " rightcell";
+                            appString += "' id='" + id;
                             appString += "'></div>";
                             $("#gridcontainer").append(appString);
                         }
@@ -28,7 +35,13 @@
                 });
 
 
-
+                // The click event handler for button1
+                $(".gridcell").click(function(){
+                    var clickedcell = this.id;
+                    count++;
+                    player = count % 2;
+                    newClickReceived(player, clickedcell);
+                });
 
 
 
@@ -55,6 +68,23 @@
         // asynchronous operation before your application is suspended, call
         // args.setPromise().
     };
+
+    //User defined functions
+    
+
+    //Function when a new click is received
+    function newClickReceived(player , cellid) {
+        if (player == 1) {
+            document.getElementById(cellid).style.backgroundImage = "url('/images/greenx.png')";
+            document.getElementById(cellid).style.backgroundSize = "cover";
+            console.log(player+" "+cellid);
+        }
+        else {
+            document.getElementById(cellid).style.backgroundImage = "url('/images/blueo.png')";
+            document.getElementById(cellid).style.backgroundSize = "cover";
+            console.log(player+" "+cellid);
+        }
+    }
 
     app.start();
 })();
