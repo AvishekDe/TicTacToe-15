@@ -1,4 +1,8 @@
-﻿// For an introduction to the Blank template, see the following documentation:
+﻿//Global Variables
+var count = 0, player;
+
+
+// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 (function () {
     "use strict";
@@ -12,11 +16,12 @@
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
 
-                //Global Variables
-                var count = 0, player;
+                
 
                 //create the 15x15 grid and add ids and classes
                 $(document).ready(function () {
+                    
+                    initialize();
                     var i, j,id="";
                     var appString="";
                     for (i = 0; i < 15; i++) {
@@ -35,12 +40,13 @@
                 });
 
 
-                // The click event handler for button1
+                // The click event handler for gridcells
                 $(".gridcell").click(function(){
                     var clickedcell = this.id;
                     count++;
                     player = count % 2;
                     newClickReceived(player, clickedcell);
+                    displaygrid();
                 });
 
 
@@ -74,18 +80,8 @@
 
     //Function when a new click is received
     function newClickReceived(player , cellid) {
-        if (player == 1) {
-            document.getElementById(cellid).style.backgroundImage = "url('/images/greenx.png')";
-            document.getElementById(cellid).style.backgroundSize = "cover";
-            //$("#cellid").css("background", "url(/images/greenx.png)");
-            console.log(player+" "+cellid);
-        }
-        else {
-            document.getElementById(cellid).style.backgroundImage = "url('/images/blueo.png')";
-            document.getElementById(cellid).style.backgroundSize = "cover";
-            //$("#cellid").css("background", "url(/images/blueo.png)");
-            console.log(player+" "+cellid);
-        }
+        var moveResp = move(player, cellid);
+        if (!moveResp) count--;
     }
 
     app.start();
