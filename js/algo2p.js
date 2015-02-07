@@ -12,6 +12,8 @@ function initialize() {
     for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
             grid[i][j] = 0;
+            var cellid = (i * 15) + j;
+            $("#" + cellid).css('background-image', 'none');
         }
     }
 }
@@ -115,3 +117,5 @@ function oUpdate(cellid) {
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
 }
+
+//Update view

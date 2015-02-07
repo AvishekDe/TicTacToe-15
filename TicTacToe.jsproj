@@ -69,6 +69,7 @@
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\jquery-2.1.3.js" />
+    <Content Include="js\ai.js" />
     <None Include="TicTacToe_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

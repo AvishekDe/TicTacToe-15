@@ -42,7 +42,8 @@ var count = 0, player;
 
                 // Change z-index of divs
                 $("#button2p").click(function () {
-                    $("#placeholder").css('z-index', '3');
+                    $("#placeholder").css('z-index', '2');
+                    $("#overlay").css('z-index', '1');
                 });
 
                 // The click event handler for gridcells
@@ -106,13 +107,14 @@ var count = 0, player;
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-            resultDiv.innerHTML = "<h2>Yes</h2>";
+            console.log("HERE");
+            initialize();
         }));
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Exit', function () {
             //calling callback function for No command
  
-            resultDiv.innerHTML = "<h2>no</h2>";
+            $();
         }));
  
         messagedialogpopup.showAsync();
