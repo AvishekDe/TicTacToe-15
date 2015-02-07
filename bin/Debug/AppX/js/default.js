@@ -1,5 +1,6 @@
 ﻿//Global Variables
 var count = 0, player;
+var pFlag = 0;
 var audio1,audio2,audiovictory,audioButton;
 
 // For an introduction to the Blank template, see the following documentation:
@@ -23,7 +24,7 @@ var audio1,audio2,audiovictory,audioButton;
                     
                     initialize();
                     var i, j,id="";
-                    var appString="";
+                    var appString = "";
                     for (i = 0; i < 15; i++) {
                         for (j = 0; j < 15; j++) {
                             id = (i * 15) + j;
@@ -35,6 +36,22 @@ var audio1,audio2,audiovictory,audioButton;
                             appString += "' id='" + id;
                             appString += "'></div>";
                             $("#gridcontainer").append(appString);
+                        }
+                    }
+
+                    var i, j, id = "";
+                    var tappString = "";
+                    for (i = 0; i < 15; i++) {
+                        for (j = 0; j < 15; j++) {
+                            id = (i * 15) + j;
+                            tappString = "<div class='gridcell";
+                            if (i == 0) tappString += " topcell";
+                            if (i == 14) tappString += " bottomcell";
+                            if (j == 0) tappString += " leftcell";
+                            if (j == 14) tappString += " rightcell";
+                            tappString += "' id='" + (id+300);
+                            tappString += "'></div>";
+                            $("#tgridcontainer").append(tappString);
                         }
                     }
 
@@ -54,7 +71,14 @@ var audio1,audio2,audiovictory,audioButton;
                 $("#button2p").click(function () {
                     $("#placeholder").css('z-index', '2');
                     $("#overlay").css('z-index', '1');
+                    pFlag = 2;
+                    audioButton.play();
+                });
 
+                $("#button3p").click(function () {
+                    $("#tplaceholder").css('z-index', '2');
+                    $("#overlay").css('z-index', '1');
+                    pFlag = 3;
                     audioButton.play();
                 });
 
@@ -62,9 +86,15 @@ var audio1,audio2,audiovictory,audioButton;
                 $(".gridcell").click(function(){
                     var clickedcell = this.id;
                     count++;
-                    player = count % 2;
-                    newClickReceived(player, clickedcell);
-                    displaygrid();
+                    if (pFlag == 2) {
+                        player = count % 2;
+                        newClickReceived(player, clickedcell);
+                        //displaygrid();
+                    }
+                    else if (pFlag == 3) {
+                        player = count % 3;
+                        newTClickReceived(player, clickedcell);
+                    }
                 });
 
 
@@ -106,6 +136,15 @@ var audio1,audio2,audiovictory,audioButton;
             if (win) showPopUp(player);
         }
     }
+    function newTClickReceived(player, cellid) {
+        var win = false;
+        var moveResp = tmove(player, cellid);
+        if (!moveResp) count--;
+        else {
+            win = checkFinal(player);
+            if (win) tshowPopUp(player);
+        }
+    }
 
     function showPopUp(player) {
         audiovictory.play();
@@ -132,6 +171,35 @@ var audio1,audio2,audiovictory,audioButton;
             audioButton.play();
         }));
  
+        messagedialogpopup.showAsync();
+    }
+
+
+    function tshowPopUp(player) {
+        audiovictory.play();
+        if (player == 0) player = 3;
+        var resultDiv = document.getElementById('resultDiv');
+        var winString = "Player " + player + " has won";
+        //Creating message dialog box
+        var messagedialogpopup = new Windows.UI.Popups.MessageDialog
+        ('Game Over', winString);
+
+        // adding command to message dialog box
+
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
+            //calling callback function for Yes command
+            audioButton.play();
+            tinitialize();
+        }));
+
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Exit', function () {
+            //calling callback function for No command
+            tinitialize();
+            $("#overlay").css('z-index', '2');
+            $("#tplaceholder").css('z-index', '1');
+            audioButton.play();
+        }));
+
         messagedialogpopup.showAsync();
     }
 

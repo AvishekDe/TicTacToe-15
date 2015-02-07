@@ -14,10 +14,10 @@
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
     <script src="/js/algo2p.js"></script>
+    <script src="/js/algo3p.js"></script>
 </head>
 <body>
-
-    <audio id="player1audio"><source src="/tones/root.mp3" type="audio/mp3" /></audio>
+    <!-- Two Player Grid-->
     <div id="placeholder">
         <div id="gridcontainer">
             
@@ -25,11 +25,18 @@
     </div>
     <span id="resultDiv"></span>
 
+    <!-- Three player Grid-->
+    <div id="tplaceholder">
+        <div id="tgridcontainer">
+
+        </div>
+    </div>
+
     <!-- Entry point-->
     <div id="overlay">
         <div id="heading">Tic Tac Toe</div>
-        <button id="button2p" class="buttonHome">Two players</button>
-        <button id="buttonAI" class="buttonHome">One player</button>
+        <button id="button3p" class="buttonHome">Three Players</button>
+        <button id="button2p" class="buttonHome">Two Players</button>
     </div>
 
     <!-- Multi Grid-->

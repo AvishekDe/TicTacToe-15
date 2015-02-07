@@ -53,7 +53,7 @@
     background-size:cover;
 }
 
-#button2p{
+#button3p{
     position:absolute;
     width:40vw;
     height:10vh;
@@ -62,7 +62,7 @@
     top:60vh;
 }
 
-#buttonAI{
+#button2p{
     position:absolute;
     width:40vw;
     left:30vw;
@@ -86,4 +86,22 @@
     font-size: 100px;
     color:black;
 }
-    
+
+#tplaceholder{
+    position:absolute;
+    background-color:#1E1E1E;
+    height:100vh;
+    width:100vw;
+    z-index:1;
+}
+
+#tgridcontainer {
+    background-color:red;
+    width: 630px;
+    height: 630px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-315px;
+    margin-top:-315px;
+}

@@ -8,6 +8,7 @@ for (var i = 0; i < 15; i++) {
 
 //Initialize grid elements to 0
 function initialize() {
+    count = 0;
     var i, j;
     for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
@@ -53,7 +54,7 @@ function move(player, cellid) {
 //Check for winner
 function checkFinal(player) {
     var flag = 0;
-    if (player == 0) player = 2;
+    if (player == 0) player = 3;
     var i, j;
     outer:for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
@@ -111,6 +112,7 @@ function xUpdate(cellid) {
     audio1.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
+    console.log("FIRST");
 }
 
 //Update o Cell
@@ -118,6 +120,7 @@ function oUpdate(cellid) {
     audio2.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
+    console.log("SECOND");
 }
 
 //Update view
