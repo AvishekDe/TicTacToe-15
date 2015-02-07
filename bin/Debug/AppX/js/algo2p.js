@@ -106,12 +106,12 @@ function checkFinal(player) {
 
 //Update x Cell
 function xUpdate(cellid) {
-    document.getElementById(cellid).style.backgroundImage = "url('/images/greenx.png')";
+    document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
 }
 
 //Update o Cell
 function oUpdate(cellid) {
-    document.getElementById(cellid).style.backgroundImage = "url('/images/blueo.png')";
+    document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
 }
