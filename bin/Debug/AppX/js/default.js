@@ -1,6 +1,6 @@
 ﻿//Global Variables
 var count = 0, player;
-
+var audio1,audio2,audiovictory,audioButton;
 
 // For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
@@ -37,13 +37,25 @@ var count = 0, player;
                             $("#gridcontainer").append(appString);
                         }
                     }
-                    //$("#gridcontainer").css('visibility', 'hidden');
+
+                    audio1 = document.createElement('audio');
+                    audio1.setAttribute('src', '/tones/audio1.mp3');
+                    audio2 = document.createElement('audio');
+                    audio2.setAttribute('src', '/tones/player2.mp3');
+                    audiovictory = document.createElement('audio');
+                    audiovictory.setAttribute('src', '/tones/victory.mp3');
+                    audioButton = document.createElement('audio');
+                    audioButton.setAttribute('src', '/tones/root.mp3');
+                    $.get();
+                   
                 });
 
                 // Change z-index of divs
                 $("#button2p").click(function () {
                     $("#placeholder").css('z-index', '2');
                     $("#overlay").css('z-index', '1');
+
+                    audioButton.play();
                 });
 
                 // The click event handler for gridcells
@@ -96,6 +108,7 @@ var count = 0, player;
     }
 
     function showPopUp(player) {
+        audiovictory.play();
         if (player == 0) player = 2;
         var resultDiv = document.getElementById('resultDiv');
         var winString = "Player " + player + " has won";
@@ -107,7 +120,7 @@ var count = 0, player;
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-
+            audioButton.play();
             initialize();
         }));
  
@@ -116,6 +129,7 @@ var count = 0, player;
             initialize();
             $("#overlay").css('z-index', '2');
             $("#placeholder").css('z-index', '1');
+            audioButton.play();
         }));
  
         messagedialogpopup.showAsync();

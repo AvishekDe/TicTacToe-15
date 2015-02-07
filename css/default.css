@@ -71,7 +71,19 @@
     top:45vh;
 }
 
+.buttonHome{
+    background-color: grey;
+    border: 5px solid black;
+    color: white;
+}
+
+.buttonHome:hover{
+    color:black;
+    border: 5px solid black;
+}
+
 #heading {
     font-size: 100px;
+    color:black;
 }
     

@@ -65,6 +65,18 @@
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\audio1.mp3">
+      <PackagePath>tones\audio1.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\player2.mp3">
+      <PackagePath>tones\player2.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\root.mp3">
+      <PackagePath>tones\root.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\victory.mp3">
+      <PackagePath>tones\victory.mp3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>

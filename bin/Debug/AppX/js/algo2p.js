@@ -108,12 +108,14 @@ function checkFinal(player) {
 
 //Update x Cell
 function xUpdate(cellid) {
+    audio1.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
 }
 
 //Update o Cell
 function oUpdate(cellid) {
+    audio2.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
 }
