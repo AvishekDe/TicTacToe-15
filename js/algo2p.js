@@ -48,3 +48,60 @@ function move(player, cellid) {
         return true;
     }
 }
+
+
+//Check for winner
+function checkFinal(player) {
+    var flag = 0;
+    if (player == 0) player = 2;
+    var i, j;
+    outer:for (i = 0; i < 15; i++) {
+        for (j = 0; j < 15; j++) {
+            //ROW Victory
+            if (grid[i][j] == player) {
+                if (j + 4 < 15) {
+                    if ((player == grid[i][j + 1]) && (player == grid[i][j + 2]) && (player == grid[i][j + 3]) && (player == grid[i][j + 4])) {
+                        console.log("ROW " + i + " " + j);
+                        flag = 1;
+                        break outer;
+                    }
+                }
+            }
+
+            //COLUMN Victory
+            if (grid[i][j] == player) {
+                if (i + 4 < 15) {
+                    if ((player == grid[i + 1][j]) && (player == grid[i + 2][j]) && (player == grid[i + 3][j]) && (player == grid[i + 4][j])) {
+                        console.log("COLUMN " + i + " " + j);
+                        flag = 1;
+                        break outer;
+                    }
+                }
+            }
+
+            //PRINCIPAL DIAGONAL Victory
+            if (grid[i][j] == player) {
+                if ((i + 4 < 15)&&(j+4<15)) {
+                    if ((player == grid[i + 1][j+1]) && (player == grid[i + 2][j+2]) && (player == grid[i + 3][j+3]) && (player == grid[i + 4][j+4])) {
+                        console.log("PDIAGONAL " + i + " " + j);
+                        flag = 1;
+                        break outer;
+                    }
+                }
+            }
+
+            //OFF DIAGONAL Victory
+            if (grid[i][j] == player) {
+                if ((i + 4 < 15) && (j - 4 >= 0)) {
+                    if ((player == grid[i + 1][j - 1]) && (player == grid[i + 2][j - 2]) && (player == grid[i + 3][j - 3]) && (player == grid[i + 4][j - 4])) {
+                        console.log("ODIAGONAL " + i + " " + j);
+                        flag = 1;
+                        break outer;
+                    }
+                }
+            }
+        }
+    }
+    if (flag == 1) return true;
+    else return false;
+}

@@ -79,9 +79,23 @@ var count = 0, player;
     
 
     //Function when a new click is received
-    function newClickReceived(player , cellid) {
+    function newClickReceived(player, cellid) {
+        var win = false;
         var moveResp = move(player, cellid);
         if (!moveResp) count--;
+        else {
+            win = checkFinal(player);
+            if (win) showPopUp(player);
+        }
+    }
+
+    function showPopUp(player) {
+        console.log("DONE");
+        var resultDiv = document.getElementById('resultDiv');
+
+        //Creating message dialog box
+        var messagedialogpopup = new Windows.UI.Popups.MessageDialog
+        ('Allow to use your location ', 'Location Application');
     }
 
     app.start();
