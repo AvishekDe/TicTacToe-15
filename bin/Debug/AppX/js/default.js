@@ -37,8 +37,13 @@ var count = 0, player;
                             $("#gridcontainer").append(appString);
                         }
                     }
+                    //$("#gridcontainer").css('visibility', 'hidden');
                 });
 
+                // Change z-index of divs
+                $("#button2p").click(function () {
+                    $("#placeholder").css('z-index', '3');
+                });
 
                 // The click event handler for gridcells
                 $(".gridcell").click(function(){

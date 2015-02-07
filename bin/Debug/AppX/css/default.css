@@ -1,7 +1,14 @@
-﻿#placeholder{
+﻿@font-face{
+    font-family:'SegoeUI';
+    src: url('/fonts/segoeui.ttf') format('truetype');
+}
+
+#placeholder{
+    position:absolute;
     background-color:#1E1E1E;
     height:100vh;
     width:100vw;
+    z-index:1;
 }
 
 #gridcontainer {
@@ -38,3 +45,38 @@
 .gridcell .bottomcell{
     border-bottom:1px solid black;
 }
+
+#overlay{
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    z-index:2;
+    background-color:#1E1E1E;
+    text-align:center;
+    padding-top:100px;
+}
+
+#button2p{
+    position:absolute;
+    width:40vw;
+    height:10vh;
+    font-size:30px;
+    left:30vw;
+    top:60vh;
+}
+
+#buttonAI{
+    position:absolute;
+    width:40vw;
+    left:30vw;
+    height:10vh;
+    font-size:30px;
+    top:45vh;
+}
+
+#heading {
+    font-family: 'SegoeUI';
+    font-size: 100px;
+    
+}
+    

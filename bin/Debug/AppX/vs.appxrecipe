@@ -20,13 +20,21 @@
     <AppXManifest Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-07T11:19:12.264</Modified>
+      <Modified>2015-02-07T14:56:31.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-02-07T07:12:25.556</Modified>
+      <Modified>2015-02-07T14:34:44.477</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\fonts\Segoe.ttf">
+      <PackagePath>fonts\Segoe.ttf</PackagePath>
+      <Modified>2013-02-22T00:11:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\fonts\segoeui.ttf">
+      <PackagePath>fonts\segoeui.ttf</PackagePath>
+      <Modified>2012-05-04T03:31:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
@@ -58,11 +66,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algo2p.js">
       <PackagePath>js\algo2p.js</PackagePath>
-      <Modified>2015-02-07T11:19:41.496</Modified>
+      <Modified>2015-02-07T13:31:04.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-07T09:53:11.008</Modified>
+      <Modified>2015-02-07T14:28:40.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\jquery-2.1.3.js">
       <PackagePath>js\jquery-2.1.3.js</PackagePath>
@@ -70,11 +78,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-02-06T18:59:57.754</Modified>
+      <Modified>2015-02-07T14:56:23.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-07T11:19:12.024</Modified>
+      <Modified>2015-02-07T14:56:31.667</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
