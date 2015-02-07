@@ -3,6 +3,7 @@ default.html
 fonts\Segoe.ttf
 fonts\segoeui.ttf
 images\background.jpg
+images\download.svg
 images\logo.scale-100.png
 images\smalllogo.scale-100.png
 images\splashscreen.scale-100.png
@@ -16,5 +17,6 @@ js\default.js
 js\jquery-2.1.3.js
 tones\audio1.mp3
 tones\player2.mp3
+tones\player3.mp3
 tones\root.mp3
 tones\victory.mp3

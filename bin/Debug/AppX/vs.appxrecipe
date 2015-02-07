@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-07T22:07:20.360</Modified>
+      <Modified>2015-02-07T23:04:57.166</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +39,22 @@
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\background.jpg">
       <PackagePath>images\background.jpg</PackagePath>
       <Modified>2015-02-07T15:15:03.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\download.svg">
+      <PackagePath>images\download.svg</PackagePath>
+      <Modified>2015-02-07T23:01:44.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whiteo.svg">
+      <PackagePath>images\whiteo.svg</PackagePath>
+      <Modified>2015-02-07T11:06:27.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whitet.svg">
+      <PackagePath>images\whitet.svg</PackagePath>
+      <Modified>2015-02-07T21:33:57.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whitex.svg">
+      <PackagePath>images\whitex.svg</PackagePath>
+      <Modified>2015-02-07T10:18:40.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
@@ -60,25 +76,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-06-02T12:08:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whiteo.svg">
-      <PackagePath>images\whiteo.svg</PackagePath>
-      <Modified>2015-02-07T11:06:27.843</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whitet.svg">
-      <PackagePath>images\whitet.svg</PackagePath>
-      <Modified>2015-02-07T21:33:57.677</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\whitex.svg">
-      <PackagePath>images\whitex.svg</PackagePath>
-      <Modified>2015-02-07T10:18:40.157</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algo2p.js">
       <PackagePath>js\algo2p.js</PackagePath>
       <Modified>2015-02-07T22:40:24.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-07T22:47:55.107</Modified>
+      <Modified>2015-02-07T23:04:09.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\jquery-2.1.3.js">
       <PackagePath>js\jquery-2.1.3.js</PackagePath>
@@ -86,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algo3p.js">
       <PackagePath>js\algo3p.js</PackagePath>
-      <Modified>2015-02-07T22:44:31.472</Modified>
+      <Modified>2015-02-07T23:04:49.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\css\default.css">
       <PackagePath>css\default.css</PackagePath>
@@ -100,6 +104,10 @@
       <PackagePath>tones\player2.mp3</PackagePath>
       <Modified>2015-02-07T20:11:59.895</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\player3.mp3">
+      <PackagePath>tones\player3.mp3</PackagePath>
+      <Modified>2015-02-07T23:01:54.246</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\tones\root.mp3">
       <PackagePath>tones\root.mp3</PackagePath>
       <Modified>2015-02-07T19:11:00.162</Modified>
@@ -110,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-07T22:07:20.130</Modified>
+      <Modified>2015-02-07T23:04:55.834</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

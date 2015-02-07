@@ -1,7 +1,7 @@
 ﻿//Global Variables
 var count = 0, player;
 var pFlag = 0;
-var audio1,audio2,audiovictory,audioButton;
+var audio1,audio2,audio3,audiovictory,audioButton;
 
 // For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
@@ -59,6 +59,8 @@ var audio1,audio2,audiovictory,audioButton;
                     audio1.setAttribute('src', '/tones/audio1.mp3');
                     audio2 = document.createElement('audio');
                     audio2.setAttribute('src', '/tones/player2.mp3');
+                    audio3 = document.createElement('audio');
+                    audio3.setAttribute('src', '/tones/player3.mp3');
                     audiovictory = document.createElement('audio');
                     audiovictory.setAttribute('src', '/tones/victory.mp3');
                     audioButton = document.createElement('audio');

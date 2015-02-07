@@ -40,8 +40,8 @@ function tmove(player, cellid) {
 
 //Update triangle Cell
 function ttUpdate(cellid) {
-    audio2.play();
-    document.getElementById(cellid).style.backgroundImage = "url('/images/whitet.svg')";
+    audio3.play();
+    document.getElementById(cellid).style.backgroundImage = "url('/images/download.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("THIRD");
 }
