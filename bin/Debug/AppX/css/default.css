@@ -1,9 +1,4 @@
-﻿@font-face{
-    font-family:'SegoeUI';
-    src: url('/fonts/segoeui.ttf') format('truetype');
-}
-
-#placeholder{
+﻿#placeholder{
     position:absolute;
     background-color:#1E1E1E;
     height:100vh;
@@ -54,6 +49,8 @@
     background-color:#1E1E1E;
     text-align:center;
     padding-top:100px;
+    background-image:url('/images/background.jpg');
+    background-size:cover;
 }
 
 #button2p{
@@ -75,8 +72,6 @@
 }
 
 #heading {
-    font-family: 'SegoeUI';
     font-size: 100px;
-    
 }
     

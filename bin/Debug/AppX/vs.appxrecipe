@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-07T14:56:31.896</Modified>
+      <Modified>2015-02-07T15:15:52.305</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +35,10 @@
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\fonts\segoeui.ttf">
       <PackagePath>fonts\segoeui.ttf</PackagePath>
       <Modified>2012-05-04T03:31:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\background.jpg">
+      <PackagePath>images\background.jpg</PackagePath>
+      <Modified>2015-02-07T15:15:03.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
@@ -78,11 +82,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-02-07T14:56:23.443</Modified>
+      <Modified>2015-02-07T15:16:42.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-07T14:56:31.667</Modified>
+      <Modified>2015-02-07T15:15:51.835</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
