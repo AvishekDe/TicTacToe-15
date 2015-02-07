@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-06T18:58:41.769</Modified>
+      <Modified>2015-02-07T09:58:51.886</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -58,11 +58,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algo2p.js">
       <PackagePath>js\algo2p.js</PackagePath>
-      <Modified>2015-02-07T08:08:04.347</Modified>
+      <Modified>2015-02-07T09:58:47.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-07T08:31:36.058</Modified>
+      <Modified>2015-02-07T09:53:11.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\jquery-2.1.3.js">
       <PackagePath>js\jquery-2.1.3.js</PackagePath>
@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-06T18:58:41.027</Modified>
+      <Modified>2015-02-07T09:58:51.762</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -36,13 +36,11 @@ function move(player, cellid) {
     else {
         if (player == 1) {
             grid[i][j] = 1;
-            document.getElementById(cellid).style.backgroundImage = "url('/images/greenx.png')";
-            document.getElementById(cellid).style.backgroundSize = "cover";
+            xUpdate(cellid);
         }
         else {
             grid[i][j] = 2;
-            document.getElementById(cellid).style.backgroundImage = "url('/images/blueo.png')";
-            document.getElementById(cellid).style.backgroundSize = "cover";
+            oUpdate(cellid);
         }
 
         return true;
@@ -104,4 +102,16 @@ function checkFinal(player) {
     }
     if (flag == 1) return true;
     else return false;
+}
+
+//Update x Cell
+function xUpdate(cellid) {
+    document.getElementById(cellid).style.backgroundImage = "url('/images/greenx.png')";
+    document.getElementById(cellid).style.backgroundSize = "cover";
+}
+
+//Update o Cell
+function oUpdate(cellid) {
+    document.getElementById(cellid).style.backgroundImage = "url('/images/blueo.png')";
+    document.getElementById(cellid).style.backgroundSize = "cover";
 }
