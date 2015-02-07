@@ -96,6 +96,28 @@ var count = 0, player;
         //Creating message dialog box
         var messagedialogpopup = new Windows.UI.Popups.MessageDialog
         ('Allow to use your location ', 'Location Application');
+
+        // adding command to message dialog box
+ 
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('yes', function () {
+            //calling callback function for Yes command
+            resultDiv.innerHTML = "<h2>Yes</h2>";
+        }));
+ 
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('no', function () {
+            //calling callback function for No command
+ 
+            resultDiv.innerHTML = "<h2>no</h2>";
+        }));
+ 
+ 
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Yes but with limitd data', function () {
+            //calling callback function for Yes but with limited data command
+ 
+            resultDiv.innerHTML = "<h2>Yes but with limited data</h2>";
+        }));
+ 
+        messagedialogpopup.showAsync();
     }
 
     app.start();
