@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-02-07T18:32:42.853</Modified>
+      <Modified>2015-02-07T18:39:38.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\jquery-2.1.3.js">
       <PackagePath>js\jquery-2.1.3.js</PackagePath>

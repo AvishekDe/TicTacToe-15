@@ -107,14 +107,15 @@ var count = 0, player;
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-            console.log("HERE");
+
             initialize();
         }));
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Exit', function () {
             //calling callback function for No command
- 
-            $();
+            initialize();
+            $("#overlay").css('z-index', '2');
+            $("#placeholder").css('z-index', '1');
         }));
  
         messagedialogpopup.showAsync();
