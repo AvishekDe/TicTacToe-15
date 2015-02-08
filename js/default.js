@@ -122,8 +122,9 @@ var audio1,audio2,audio3,audiovictory,audioButton;
                     }
 
                     else if (pFlag == 10) {
-                        player = count % 2;
-                        newAClickReceived(player, clickedcell);
+                        
+                        newAClickReceived(1, clickedcell);
+                        Arti();
                     }
                 });
 
@@ -177,7 +178,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
     }
     function newAClickReceived(player, cellid) {
         var win = false;
-        var moveResp = amove(player, cellid);
+        var moveResp = amove(1, cellid);
         if (!moveResp) count--;
         else {
             win = checkFinal(player);

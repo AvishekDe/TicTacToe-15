@@ -13,10 +13,15 @@
 
 //Enter player move in grid
 function amove(player, cellid) {
-    var mod = cellid - 700;
+    if (player == 1) var mod = cellid - 700;
+    else {
+        cellid += 700;
+        mod = cellid - 700;
+    }
     var i, j;
     i = Math.floor(mod / 15);
     j = mod % 15;
+    console.log(i + " " + j);
     if (grid[i][j] != 0) {
         return false;
     }
