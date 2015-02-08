@@ -68,6 +68,7 @@
     <Content Include="images\whitet.svg" />
     <Content Include="images\whitex.svg" />
     <Content Include="js\algo2p.js" />
+    <Content Include="js\algoAI.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\jquery-2.1.3.js" />

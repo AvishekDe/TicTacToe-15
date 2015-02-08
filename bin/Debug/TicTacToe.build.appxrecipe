@@ -59,6 +59,9 @@
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algo2p.js">
       <PackagePath>js\algo2p.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\algoAI.js">
+      <PackagePath>js\algoAI.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>

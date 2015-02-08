@@ -55,6 +55,22 @@ var audio1,audio2,audio3,audiovictory,audioButton;
                         }
                     }
 
+                    var i, j, id = "";
+                    var aappString = "";
+                    for (i = 0; i < 15; i++) {
+                        for (j = 0; j < 15; j++) {
+                            id = (i * 15) + j;
+                            aappString = "<div class='gridcell";
+                            if (i == 0) aappString += " topcell";
+                            if (i == 14) aappString += " bottomcell";
+                            if (j == 0) aappString += " leftcell";
+                            if (j == 14) aappString += " rightcell";
+                            aappString += "' id='" + (id + 700);
+                            aappString += "'></div>";
+                            $("#agridcontainer").append(aappString);
+                        }
+                    }
+
                     audio1 = document.createElement('audio');
                     audio1.setAttribute('src', '/tones/audio1.mp3');
                     audio2 = document.createElement('audio');
@@ -84,6 +100,13 @@ var audio1,audio2,audio3,audiovictory,audioButton;
                     audioButton.play();
                 });
 
+                $("#buttonAI").click(function () {
+                    $("#aplaceholder").css('z-index', '2');
+                    $("#overlay").css('z-index', '1');
+                    pFlag = 10;
+                    audioButton.play();
+                })
+
                 // The click event handler for gridcells
                 $(".gridcell").click(function(){
                     var clickedcell = this.id;
@@ -96,6 +119,11 @@ var audio1,audio2,audio3,audiovictory,audioButton;
                     else if (pFlag == 3) {
                         player = count % 3;
                         newTClickReceived(player, clickedcell);
+                    }
+
+                    else if (pFlag == 10) {
+                        player = count % 2;
+                        newAClickReceived(player, clickedcell);
                     }
                 });
 
@@ -145,6 +173,15 @@ var audio1,audio2,audio3,audiovictory,audioButton;
         else {
             win = checkFinal(player);
             if (win) tshowPopUp(player);
+        }
+    }
+    function newAClickReceived(player, cellid) {
+        var win = false;
+        var moveResp = amove(player, cellid);
+        if (!moveResp) count--;
+        else {
+            win = checkFinal(player);
+            if (win) ashowPopUp(player);
         }
     }
 
@@ -199,6 +236,34 @@ var audio1,audio2,audio3,audiovictory,audioButton;
             tinitialize();
             $("#overlay").css('z-index', '2');
             $("#tplaceholder").css('z-index', '1');
+            audioButton.play();
+        }));
+
+        messagedialogpopup.showAsync();
+    }
+
+    function ashowPopUp(player) {
+        audiovictory.play();
+        if (player == 0) player = 2;
+        var resultDiv = document.getElementById('resultDiv');
+        var winString = "Player " + player + " has won";
+        //Creating message dialog box
+        var messagedialogpopup = new Windows.UI.Popups.MessageDialog
+        ('Game Over', winString);
+
+        // adding command to message dialog box
+
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
+            //calling callback function for Yes command
+            audioButton.play();
+            ainitialize();
+        }));
+
+        messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Exit', function () {
+            //calling callback function for No command
+            ainitialize();
+            $("#overlay").css('z-index', '2');
+            $("#aplaceholder").css('z-index', '1');
             audioButton.play();
         }));
 

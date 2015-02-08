@@ -71,6 +71,15 @@
     top:45vh;
 }
 
+#buttonAI{
+    position:absolute;
+    width:40vw;
+    left:30vw;
+    height:10vh;
+    font-size:30px;
+    top:75vh;
+}
+
 .buttonHome{
     background-color: grey;
     border: 5px solid black;
@@ -96,6 +105,25 @@
 }
 
 #tgridcontainer {
+    background-color:red;
+    width: 630px;
+    height: 630px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-315px;
+    margin-top:-315px;
+}
+
+#aplaceholder{
+    position:absolute;
+    background-color:#1E1E1E;
+    height:100vh;
+    width:100vw;
+    z-index:1;
+}
+
+#agridcontainer {
     background-color:red;
     width: 630px;
     height: 630px;
