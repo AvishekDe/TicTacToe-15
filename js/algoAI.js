@@ -47,7 +47,7 @@ function amove(player, cellid) {
 
 //Update x Cell
 function axUpdate(cellid) {
-    audio1.play();
+    if(soundFlag==1) audio1.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("FIRST");
@@ -55,7 +55,7 @@ function axUpdate(cellid) {
 
 //Update o Cell
 function aoUpdate(cellid) {
-    audio2.play();
+    if(soundFlag==1)audio2.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("SECOND");

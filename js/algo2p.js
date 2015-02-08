@@ -54,7 +54,7 @@ function move(player, cellid) {
 //Check for winner
 function checkFinal(player) {
     var flag = 0;
-    if (player == 0) player = 3;
+    if (player == 0) player = 2;
     var i, j;
     outer:for (i = 0; i < 15; i++) {
         for (j = 0; j < 15; j++) {
@@ -109,7 +109,7 @@ function checkFinal(player) {
 
 //Update x Cell
 function xUpdate(cellid) {
-    audio1.play();
+    if(soundFlag==1) audio1.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("FIRST");
@@ -117,7 +117,7 @@ function xUpdate(cellid) {
 
 //Update o Cell
 function oUpdate(cellid) {
-    audio2.play();
+    if(soundFlag==1) audio2.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("SECOND");

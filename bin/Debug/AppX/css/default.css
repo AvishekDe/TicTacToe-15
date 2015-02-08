@@ -1,9 +1,10 @@
 ﻿#placeholder{
     position:absolute;
-    background-color:#1E1E1E;
+    background-image: url('/images/gridBackground.jpg');
     height:100vh;
     width:100vw;
     z-index:1;
+    background-size:cover;
 }
 
 #gridcontainer {
@@ -98,10 +99,12 @@
 
 #tplaceholder{
     position:absolute;
-    background-color:#1E1E1E;
+    
     height:100vh;
     width:100vw;
     z-index:1;
+    background-image: url('/images/gridBackground.jpg');
+    background-size:cover;
 }
 
 #tgridcontainer {
@@ -117,10 +120,12 @@
 
 #aplaceholder{
     position:absolute;
-    background-color:#1E1E1E;
+    
     height:100vh;
     width:100vw;
     z-index:1;
+    background-image: url('/images/gridBackground.jpg');
+    background-size:cover;
 }
 
 #agridcontainer {
@@ -132,4 +137,14 @@
     left:50%;
     margin-left:-315px;
     margin-top:-315px;
+}
+
+#soundBut{
+    position:absolute;
+    width:20vw;
+    left:40vw;
+    height:8vh;
+    font-size:20px;
+    top:90vh;
+    vertical-align:middle;
 }

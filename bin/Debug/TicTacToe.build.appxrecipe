@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\background.jpg">
       <PackagePath>images\background.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\gridBackground.jpg">
+      <PackagePath>images\gridBackground.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\download.svg">
       <PackagePath>images\download.svg</PackagePath>
     </AppxPackagedFile>

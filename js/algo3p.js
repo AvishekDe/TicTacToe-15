@@ -40,7 +40,7 @@ function tmove(player, cellid) {
 
 //Update triangle Cell
 function ttUpdate(cellid) {
-    audio3.play();
+    if(soundFlag==1) audio3.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/download.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("THIRD");
@@ -48,7 +48,7 @@ function ttUpdate(cellid) {
 
 //Update x Cell
 function txUpdate(cellid) {
-    audio1.play();
+    if(soundFlag==1) audio1.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whitex.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("FIRST");
@@ -56,7 +56,7 @@ function txUpdate(cellid) {
 
 //Update o Cell
 function toUpdate(cellid) {
-    audio2.play();
+    if(soundFlag==1) audio2.play();
     document.getElementById(cellid).style.backgroundImage = "url('/images/whiteo.svg')";
     document.getElementById(cellid).style.backgroundSize = "cover";
     console.log("SECOND");

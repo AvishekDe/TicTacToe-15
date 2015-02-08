@@ -1,7 +1,8 @@
 ﻿//Global Variables
 var count = 0, player;
 var pFlag = 0;
-var audio1,audio2,audio3,audiovictory,audioButton;
+var audio1, audio2, audio3, audiovictory, audioButton;
+var soundFlag = 1;
 
 // For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
@@ -90,21 +91,32 @@ var audio1,audio2,audio3,audiovictory,audioButton;
                     $("#placeholder").css('z-index', '2');
                     $("#overlay").css('z-index', '1');
                     pFlag = 2;
-                    audioButton.play();
+                    if(soundFlag==1) audioButton.play();
                 });
 
                 $("#button3p").click(function () {
                     $("#tplaceholder").css('z-index', '2');
                     $("#overlay").css('z-index', '1');
                     pFlag = 3;
-                    audioButton.play();
+                    if(soundFlag==1) audioButton.play();
                 });
 
                 $("#buttonAI").click(function () {
                     $("#aplaceholder").css('z-index', '2');
                     $("#overlay").css('z-index', '1');
                     pFlag = 10;
-                    audioButton.play();
+                    if(soundFlag==1) audioButton.play();
+                });
+
+                $("#soundBut").click(function () {
+                    if (soundFlag == 1) {
+                        $("#soundBut").html("Sound:OFF");
+                        soundFlag = 0;
+                    }
+                    else {
+                        $("#soundBut").html("Sound:ON");
+                        soundFlag = 1;
+                    }
                 })
 
                 // The click event handler for gridcells
@@ -163,7 +175,9 @@ var audio1,audio2,audio3,audiovictory,audioButton;
         var moveResp = move(player, cellid);
         if (!moveResp) count--;
         else {
+            console.log("HERE");
             win = checkFinal(player);
+            console.log(win);
             if (win) showPopUp(player);
         }
     }
@@ -187,7 +201,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
     }
 
     function showPopUp(player) {
-        audiovictory.play();
+        if(soundFlag==1)audiovictory.play();
         if (player == 0) player = 2;
         var resultDiv = document.getElementById('resultDiv');
         var winString = "Player " + player + " has won";
@@ -199,7 +213,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
  
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-            audioButton.play();
+            if(soundFlag==1) audioButton.play();
             initialize();
         }));
  
@@ -208,7 +222,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
             initialize();
             $("#overlay").css('z-index', '2');
             $("#placeholder").css('z-index', '1');
-            audioButton.play();
+            if(soundFlag==1) audioButton.play();
         }));
  
         messagedialogpopup.showAsync();
@@ -216,7 +230,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
 
 
     function tshowPopUp(player) {
-        audiovictory.play();
+        if(soundFlag==1)audiovictory.play();
         if (player == 0) player = 3;
         var resultDiv = document.getElementById('resultDiv');
         var winString = "Player " + player + " has won";
@@ -228,7 +242,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
 
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-            audioButton.play();
+            if(soundFlag==1) audioButton.play();
             tinitialize();
         }));
 
@@ -237,14 +251,14 @@ var audio1,audio2,audio3,audiovictory,audioButton;
             tinitialize();
             $("#overlay").css('z-index', '2');
             $("#tplaceholder").css('z-index', '1');
-            audioButton.play();
+            if(soundFlag==1) audioButton.play();
         }));
 
         messagedialogpopup.showAsync();
     }
 
     function ashowPopUp(player) {
-        audiovictory.play();
+        if(soundFlag==1) audiovictory.play();
         if (player == 0) player = 2;
         var resultDiv = document.getElementById('resultDiv');
         var winString = "Player " + player + " has won";
@@ -256,7 +270,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
 
         messagedialogpopup.commands.append(new Windows.UI.Popups.UICommand('Replay', function () {
             //calling callback function for Yes command
-            audioButton.play();
+            if(soundFlag==1)audioButton.play();
             ainitialize();
         }));
 
@@ -265,7 +279,7 @@ var audio1,audio2,audio3,audiovictory,audioButton;
             ainitialize();
             $("#overlay").css('z-index', '2');
             $("#aplaceholder").css('z-index', '1');
-            audioButton.play();
+            if(soundFlag==1)audioButton.play();
         }));
 
         messagedialogpopup.showAsync();
