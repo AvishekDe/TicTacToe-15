@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-08T06:36:13.762</Modified>
+      <Modified>2015-02-08T07:11:30.105</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -42,7 +42,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\gridBackground.jpg">
       <PackagePath>images\gridBackground.jpg</PackagePath>
-      <Modified>2015-02-08T06:46:34.641</Modified>
+      <Modified>2015-02-08T06:47:30.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\images\download.svg">
       <PackagePath>images\download.svg</PackagePath>
@@ -130,7 +130,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Avishek\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-08T06:36:13.244</Modified>
+      <Modified>2015-02-08T07:11:29.660</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
