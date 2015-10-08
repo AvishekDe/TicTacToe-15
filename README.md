@@ -9,3 +9,4 @@ The game contains 15 x 15 grids for:
 1. Avishek De
 2. Saurav Chowdhury
 3. Saikat Dey
+4. Ankita Puwar
