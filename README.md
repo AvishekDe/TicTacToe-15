@@ -1,5 +1,5 @@
 #TicTacToe 15
-Windows 8.1 Store App made during Microsoft Code.fun.do 2014
+Windows 8.1 Store App made during Microsoft Code.fun.do 2015
 #Features
 The game contains 15 x 15 grids for:
 1. Two player grid (same computer)
